@@ -15,7 +15,11 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div class="min-h-screen">
+
+            <?php /*
+            Laravel Default setup.
+
             @include('layouts.navigation')
 
             <!-- Page Heading -->
@@ -27,10 +31,14 @@
                 </header>
             @endisset
 
+            */ ?>
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
+
+            @include('layouts.partials.footer')
         </div>
     </body>
 </html>
