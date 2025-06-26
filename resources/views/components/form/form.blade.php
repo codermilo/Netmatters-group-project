@@ -1,4 +1,6 @@
-<form x-data="{ submitting: false }" @submit="submitting = true">
+<form x-data="{ submitting: false }" @submit="submitting = true"
+  {{ $attributes->merge(['class' => '']) }}
+  >
   @csrf
 
   @if ($attributes->get('method', 'GET') !== 'GET')

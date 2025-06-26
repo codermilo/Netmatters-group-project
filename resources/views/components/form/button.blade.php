@@ -1,3 +1,5 @@
-<button :disabled="submitting">
+<button :disabled="submitting" 
+  {{ $attributes->merge(['class' => '']) }}
+  >
   {{ $slot }}
 </button>
