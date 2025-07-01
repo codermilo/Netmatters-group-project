@@ -1,4 +1,4 @@
-<section class="bg-[#d1d1d6] py-20 px-6">
+<section class="bg-[#F5F5F7] py-20 px-6">
   <div class="max-w-7xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-12">
       Help is here. Whenever and however you need it.
