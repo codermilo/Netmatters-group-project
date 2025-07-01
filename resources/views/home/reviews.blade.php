@@ -1,4 +1,4 @@
-<section class="relative bg-[#d1d1d6] pt-24 pb-32 text-gray-900 overflow-hidden">
+<section class="relative bg-[#F5F5F7] pt-24 pb-32 text-gray-900 overflow-hidden">
   <div class="relative container mx-auto px-6 md:flex md:items-start md:space-x-12 z-20">
     
     <!-- Left side: Title + Image -->
