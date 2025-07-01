@@ -38,16 +38,12 @@
         @include('layouts.navigation')
 
 
-        
+
         <!-- Page Content -->
         <main class="flex-1">
             {{ $slot }}
         </main>
 
-
-        
-         @include('home.info')
-          @include('home.reviews')
         @include('layouts.partials.footer')
     </div>
 </body>
