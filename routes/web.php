@@ -32,6 +32,14 @@ Route::middleware('auth')->group(function () {
 });
 
 
+
 require __DIR__.'/auth.php';
 
 
+// Admin Pages
+Route::prefix('admin')->group(function () {
+    Route::view('/dashboard', 'admin.dashboard')->name('admin.dashboard');
+    Route::view('/customers', 'admin.customers')->name('admin.customers');
+    Route::view('/products', 'admin.products')->name('admin.products');
+    Route::view('/orders', 'admin.orders')->name('admin.orders');
+});
