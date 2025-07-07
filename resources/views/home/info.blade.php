@@ -1,5 +1,5 @@
-<section class="bg-[#F5F5F7] py-20 px-6">
-  <div class="max-w-7xl mx-auto">
+<section class="bg-[#F5F5F7] py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-12">
       Help is here. Whenever and however you need it.
     </h2>
@@ -28,7 +28,7 @@
           <h3 class="text-2xl font-semibold leading-snug mb-2">
             Discover AI Tools Built to Boost Productivity
           </h3>
-         <p class="text-[17px] font-normal leading-[1.235] text-black opacity-90" style="font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif; color: #1d1d1f;">
+          <p class="text-[17px] font-normal leading-[1.235] text-black opacity-90" style="font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif; color: #1d1d1f;">
             Unlock time-saving automation, intelligent suggestions, and personalized insights across your devices.
           </p>
         </div>
