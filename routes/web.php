@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+// Temporary route for collections page
+Route::get('/collections', function () {
+    return view('collection');
+})->name('collection');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -33,7 +37,7 @@ Route::middleware('auth')->group(function () {
 
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
 
 // Admin Pages
