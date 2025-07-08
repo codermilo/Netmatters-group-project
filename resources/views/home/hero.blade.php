@@ -6,8 +6,8 @@
     </div>
 
     <div
-        class="bg-black text-white flex flex-col gap-4 px-4 py-8 text-center pb-0 xl:py-8
-           xl:absolute xl:bottom-10 xl:right-10 xl:bg-transparent xl:text-left xl:w-auto 2xl:right-20">
+        class="bg-black text-white flex flex-col gap-4 px-4 py-8 text-center pb-0
+           xl:absolute xl:bottom-[calc(12%+2rem)] xl:left-[calc(60%+2rem)] xl:bg-transparent xl:text-left xl:items-start xl:max-w-sm">
         <h1 class="text-5xl mt-2">iPhone</h1>
         <h3
             class="text-2xl inline-block text-transparent bg-clip-text
