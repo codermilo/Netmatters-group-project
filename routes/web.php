@@ -9,7 +9,7 @@ Route::get('/', function () {
 });
 // Temporary route for collections page
 Route::get('/collections', function () {
-    return view('collection');
+    return view('collection', ['collection' => 'smartphones']);
 })->name('collection');
 
 Route::get('/dashboard', function () {

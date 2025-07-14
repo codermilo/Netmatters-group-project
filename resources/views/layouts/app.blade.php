@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@vite('resources/js/app.js')
 
 <head>
     <meta charset="utf-8">
