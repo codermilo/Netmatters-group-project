@@ -5,12 +5,14 @@
   </div>
 
   <div class="">
+    <x-home.product-list
 
 
     @foreach ($product as $collection)
 
     @endforeach
     
+    />
   </div>
 
 </div>

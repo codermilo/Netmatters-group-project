@@ -1,11 +1,9 @@
 <div class="">
-  <div class="lg:container">
-
-
-    @foreach ($collection as $collections)
-      <x-collections.collection>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    @foreach ($collections as $collection)
+      <x-home.collection>
         
-      </x-collections.collection>
+      </x-home.collection>
     @endforeach
   </div>
 </div>
