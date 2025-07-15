@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('thumbnail');
             $table->string('imgUrl1');
             $table->string('imgUrl2');
+            $table->string('imgUrl3');
         });
     }
 

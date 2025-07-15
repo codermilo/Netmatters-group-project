@@ -31,6 +31,7 @@ class ProductSeeder extends Seeder
                     'thumbnail' => $item['thumbnail'] ?? '',
                     'imgUrl1' => $item['images'][0] ?? '',
                     'imgUrl2' => $item['images'][1] ?? '',
+                    'imgUrl3' => $item['images'][2] ?? '',
                 ]);
             }
         }
