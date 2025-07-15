@@ -1,4 +1,4 @@
-@props(['title', 'price', 'rating', 'image', 'stock' => null])
+@props(['title', 'price', 'rating', 'image', 'stock' => null, 'collection'])
 
 <div class="min-w-[250px] bg-white rounded-xl shadow border">
     <div class="h-40 rounded-t-xl bg-gray-100 p-4">
@@ -9,7 +9,9 @@
             @if ($stock && $stock < 50)
                 <span class="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full">Low Stock</span>
                 @endif
-                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded-full">Electronics</span>
+                <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded-full">
+                    {{ $collection }}
+                </span>
         </div>
         <h3 class="text-sm font-semibold mb-1">{{ $title }}</h3>
         <p class="text-xs text-gray-500 mb-2">{{ $rating }} ★</p>

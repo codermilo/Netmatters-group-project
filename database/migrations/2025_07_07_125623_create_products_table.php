@@ -19,7 +19,12 @@ return new class extends Migration
             $table->string('model');
             $table->string('description');
             $table->integer('price');
-            $table->string('imgUrl');
+            $table->float('rating', 2);
+            $table->integer('stock');
+            $table->string('thumbnail');
+            $table->string('imgUrl1');
+            $table->string('imgUrl2');
+            $table->string('imgUrl3');
         });
     }
 
