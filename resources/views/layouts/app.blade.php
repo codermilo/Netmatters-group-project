@@ -21,7 +21,7 @@
 
         <!-- Navigation Bar -->
         @include('layouts.navigation')
-        
+
         <!-- Page Content -->
         <main class="flex-1">
             {{ $slot }}

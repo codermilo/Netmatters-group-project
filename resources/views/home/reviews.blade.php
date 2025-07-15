@@ -1,5 +1,5 @@
 <section class="relative bg-[#F5F5F7] pt-24 pb-32 text-gray-900 overflow-hidden">
-  <div class="relative container mx-auto px-6 md:flex md:items-start md:space-x-12 z-20">
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:flex md:items-start md:space-x-12 z-20">
     
     <!-- Left side: Title + Image -->
     <div class="md:w-1/3 flex flex-col space-y-8 mb-12 md:mb-0 h-full">
