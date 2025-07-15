@@ -8,7 +8,7 @@
 
   <div class="">
 
-    @foreach ($product in $collection)
+    @foreach ($product as $collection)
 
 
 
