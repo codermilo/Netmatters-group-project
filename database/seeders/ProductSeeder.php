@@ -26,7 +26,11 @@ class ProductSeeder extends Seeder
                     'model' => $item['title'] ?? 'No model',
                     'description' => $item['description'] ?? '',
                     'price' => intval($item['price']) * 100,
-                    'imgUrl' => $item['thumbnail'] ?? '',
+                    'rating' => floatval($item['rating']),
+                    'stock' => intval($item['stock']),
+                    'thumbnail' => $item['thumbnail'] ?? '',
+                    'imgUrl1' => $item['images'][0] ?? '',
+                    'imgUrl2' => $item['images'][1] ?? '',
                 ]);
             }
         }
