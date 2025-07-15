@@ -6,8 +6,11 @@
 
   <div class="">
 
-    
 
+    @foreach ($product as $collection)
+
+    @endforeach
+    
   </div>
 
 </div>

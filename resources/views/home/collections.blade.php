@@ -2,7 +2,7 @@
   <div class="lg:container">
 
 
-    @foreach ($collection in $collections)
+    @foreach ($collection as $collections)
       <x-collections.collection>
         
       </x-collections.collection>
