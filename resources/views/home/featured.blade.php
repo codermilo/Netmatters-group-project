@@ -1,10 +1,3 @@
-<?php
-// Fetch electronics products from DummyJSON
-$apiUrl = 'https://dummyjson.com/products/category/' . $collection;
-$response = file_get_contents($apiUrl);
-$products = json_decode($response, true)['products'];
-?>
-
 <section class="px-4 py-8 bg-white max-w-7xl mx-auto sm:px-6 lg:px-8 mb-10">
     <!-- Heading and Controls -->
     <div class="flex items-center justify-between mb-6">

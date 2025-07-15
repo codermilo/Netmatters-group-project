@@ -4,9 +4,13 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
+use App\Models\Product;
+use App\Models\Collection;
 
 Route::get('/', function () {
-    return view('home');
+    $products = Product::with('collection')->get();
+    $collections = Collection::all();
+    return view('home', ['products' => $products, 'collections' => $collections]);
 });
 
 Route::get('/dashboard', function () {

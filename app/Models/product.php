@@ -17,4 +17,9 @@ class Product extends Model
         'price',        
         'imgUrl',
     ];
+
+    public function collection()
+    {
+        return $this->belongsTo(Collection::class, 'collection_id');
+    }
 }
