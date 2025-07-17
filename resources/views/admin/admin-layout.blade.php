@@ -52,9 +52,9 @@
                         <span>Customers</span>
                     </a>
 
-                    <a href="{{ route('admin.products') }}"
+                    <a href="{{ route('admin.products.index') }}"
                         class="flex items-center gap-3 px-4 py-2 rounded-md text-gray-800 dark:text-gray-200 
-                              {{ request()->routeIs('admin.products') ? 'bg-gray-100 dark:bg-gray-700' : 'hover:bg-gray-100 dark:hover:bg-gray-700' }} 
+                              {{ request()->routeIs('admin.products.index') ? 'bg-gray-100 dark:bg-gray-700' : 'hover:bg-gray-100 dark:hover:bg-gray-700' }} 
                               transition">
                         <i class="fa fa-box"></i>
                         <span>Products</span>

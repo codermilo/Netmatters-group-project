@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\Admin\ProductController as AdminProductController;
+use App\Http\Controllers\ProductController as PublicProductController;
+use App\Http\Controllers\Admin\CollectionController as AdminCollectionController;
+use App\Http\Controllers\CollectionController as PublicCollectionController;
 use Illuminate\Support\Facades\Route;
 
 use App\Models\Product;
@@ -43,38 +45,38 @@ require __DIR__.'/auth.php';
 
 
 // Admin Pages
-Route::prefix('admin')->group(function () {
-    Route::view('/dashboard', 'admin.dashboard')->name('admin.dashboard');
-    Route::view('/customers', 'admin.customers')->name('admin.customers');
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::view('/dashboard', 'admin.dashboard')->name('dashboard');
+    Route::view('/customers', 'admin.customers')->name('customers');
 
-    Route::view('/orders', 'admin.orders')->name('admin.orders');
+    Route::view('/orders', 'admin.orders')->name('orders');
 
-    Route::prefix('/products')->group(function () {
+    Route::prefix('/products')->name('products.')->group(function () {
         // Admin view of all products
-        Route::get('/', [ProductController::class, 'index'])->name('admin.products');
+        Route::get('/', [AdminProductController::class, 'index'])->name('index');
 
         // Admins can create products
-        Route::get('/create', [ProductController::class, 'create'])->name('admin.products.create');
-        Route::post('/create', [ProductController::class, 'store'])->name('admin.products.create');
+        Route::get('/create', [AdminProductController::class, 'create'])->name('create');
+        Route::post('/create', [AdminProductController::class, 'store'])->name('create');
 
         // Admins can edit or delete products
-        Route::get('/{product}/edit', [ProductController::class, 'edit'])->name('admin.products.edit');
-        Route::patch('/{product}/edit', [ProductController::class, 'update'])->name('admin.products.edit');
-        Route::delete('/{product}/edit', [ProductController::class, 'delete'])->name('admin.products.edit');
+        Route::get('/{product}/edit', [AdminProductController::class, 'edit'])->name('edit');
+        Route::patch('/{product}/edit', [AdminProductController::class, 'update'])->name('edit');
+        Route::delete('/{product}/edit', [AdminProductController::class, 'delete'])->name('edit');
     });
 
-    Route::prefix('/collections')->group(function () {
+    Route::prefix('/collections')->name('collections.')->group(function () {
         // Admin view all collections
-        Route::get('/', [CollectionController::class, 'index'])->name('admin.collections');
+        Route::get('/', [AdminCollectionController::class, 'index'])->name('index');
 
         // Admin can create collections
-        Route::get('/create', [CollectionController::class, 'create'])->name('admin.collections.create');
-        Route::post('/create', [CollectionController::class, 'store'])->name('admin.collections.create');
+        Route::get('/create', [AdminCollectionController::class, 'create'])->name('create');
+        Route::post('/create', [AdminCollectionController::class, 'store'])->name('create');
 
         // Admins can edit or delete products
-        Route::get('/{collection}/edit', [CollectionController::class, 'edit'])->name('admin.collections.edit');
-        Route::patch('/{collection}/edit', [CollectionController::class, 'update'])->name('admin.collections.edit');
-        Route::delete('/{collection}/edit', [CollectionController::class, 'delete'])->name('admin.collections.edit');
+        Route::get('/{collection}/edit', [AdminCollectionController::class, 'edit'])->name('edit');
+        Route::patch('/{collection}/edit', [AdminCollectionController::class, 'update'])->name('edit');
+        Route::delete('/{collection}/edit', [AdminCollectionController::class, 'delete'])->name('edit');
     });
     
 });

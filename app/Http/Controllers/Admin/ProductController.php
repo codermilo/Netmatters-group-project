@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rules\File;
@@ -89,7 +90,7 @@ class ProductController extends Controller
         $processedAttributes = $this->storeImages($validated, $imageFields, $multiImageFields, $request);
 
         Product::create($processedAttributes);
-        return redirect(route('admin.products'));
+        return redirect(route('admin.products.index'));
     }
 
     public function edit(Product $product)
@@ -118,7 +119,7 @@ class ProductController extends Controller
 
         $product->update($processedAttributes);
 
-        return redirect(route('admin.products'));
+        return redirect(route('admin.products.index'));
     }
 
     public function delete(Product $product)
@@ -135,6 +136,6 @@ class ProductController extends Controller
 
         $product->delete();
 
-        return redirect(route('admin.products'));
+        return redirect(route('admin.products.index'));
     }
 }
