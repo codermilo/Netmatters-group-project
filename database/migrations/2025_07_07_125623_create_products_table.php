@@ -23,8 +23,8 @@ return new class extends Migration
             $table->integer('stock');
             $table->string('thumbnail');
             $table->string('imgUrl1');
-            $table->string('imgUrl2');
-            $table->string('imgUrl3');
+            $table->string('imgUrl2')->nullable();
+            $table->string('imgUrl3')->nullable();
         });
     }
 
