@@ -39,10 +39,17 @@ Route::middleware('auth')->group(function () {
     })->name('customer.test');
 });
 
-
+// Customer/Guest Pages
+Route::prefix('products')->name('products.')->group(function () {
+    Route::get('/', [PublicProductController::class, 'index'])->name('index');
+    Route::get('/{product}', [PublicProductController::class, 'show'])->name('show');
+});
+Route::prefix('collection')->name('collection.')->group(function () {
+    Route::get('/', [PublicCollectionController::class, 'index'])->name('index');
+    Route::get('/{collection}', [PublicCollectionController::class, 'show'])->name('show');
+});
 
 require __DIR__.'/auth.php';
-
 
 // Admin Pages
 Route::prefix('admin')->name('admin.')->group(function () {
