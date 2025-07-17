@@ -16,6 +16,6 @@ class CollectionController extends Controller
 
     public function show()
     {
-        return view('collection.index', compact('collection'));
+        return view('collection.show', compact('collection'));
     }
 }
