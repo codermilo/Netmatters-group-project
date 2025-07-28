@@ -5,7 +5,7 @@
 
         <x-home.product-card
             :title="$product['model']"
-            :price="$product['price']"
+            :price="$product['price'] / 100"
             :rating="$product['rating']"
             :image="$product['thumbnail']" 
             :collection="$product->collection->name ?? 'Electronic'"/>
