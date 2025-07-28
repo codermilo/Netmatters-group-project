@@ -16,19 +16,22 @@ class CollectionSeeder extends Seeder
         Collection::create([
             'id' => 1,
             'name' => 'Smartphones',
-            'description' => ''
+            'description' => '',
+            'image' => 'images/phone-line-up.webp'
         ]);
 
         Collection::create([
             'id' => 2,
             'name' => 'Laptops',
-            'description' => ''
+            'description' => '',
+            'image' => 'images/laptop-line-up.webp'
         ]);
 
         Collection::create([
             'id' => 3,
             'name' => 'Tablets',
-            'description' => ''
+            'description' => '',
+            'image' => 'images/tablet-line-up.webp'
         ]);
     }
 }
