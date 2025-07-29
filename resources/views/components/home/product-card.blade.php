@@ -1,6 +1,6 @@
 @props(['title', 'price', 'rating', 'image', 'stock' => null, 'collection'])
 
-<div class="min-w-[250px] bg-white rounded-xl shadow border">
+<div class="min-w-[220px] bg-white rounded-xl shadow border">
     <div class="h-40 rounded-t-xl bg-gray-100 p-4">
         <img src="{{ $image }}" alt="{{ $title }}" class="mx-auto h-full object-contain" />
     </div>
